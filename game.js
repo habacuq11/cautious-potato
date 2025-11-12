@@ -26,111 +26,111 @@ const  dcc=[
         cap:"chihuahua"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"baja california",
+        cap:"mexicali"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"baja california sur",
+        cap:"la paz"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"aguascalientees",
+        cap:"aguascalientes"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"nuevo león",
+        cap:"monterrey"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"campeche",
+        cap:"san francisco de campeche"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"coahuila",
+        cap:"saltillo"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"chiapas",
+        cap:"tuxtla gutierrez"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"ciudad de mexico",
+        cap:"ciudad de mexico"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"durango",
+        cap:"victoria de durango"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"guanajuato",
+        cap:"guanajuato"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"guerrero",
+        cap:"chilpancingo"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"hidalgo",
+        cap:"pachuca"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"estado de mexico",
+        cap:"toluca"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"morelos",
+        cap:"cuernavaca"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"nayarit",
+        cap:"tepic"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"oaxaca",
+        cap:"oaxaca de juarez"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"puebla",
+        cap:"puebla"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"queretaro",
+        cap:"santiago de queretaro"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"quintana roo",
+        cap:"chetumal"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"san luis potosi",
+        cap:"san luis potosi"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"sonora",
+        cap:"hermosillo"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"tabasco",
+        cap:"villahermosa"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"tamaulipas",
+        cap:"ciudad victoria"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"tlaxcala",
+        cap:"tlaxcala"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"veracruz",
+        cap:"xalapa"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"yucatan",
+        cap:"merida"
     },
     {
-        st:"jalisco",
-        cap:"guadalajara"
+        st:"zacatecas",
+        cap:"zacatecas"
     },
     ]
