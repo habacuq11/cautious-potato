@@ -1,0 +1,138 @@
+/* ------------------------------------
+   PALETA DE COLORES
+   Verde: #16A34A
+   Rojo:  #DC2626
+   Blanco: #ffffff
+   Negro: #0f0f0f
+------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #000; 
+    background-image: url("https://static9.depositphotos.com/1006269/1088/i/950/depositphotos_10885236-stock-photo-united-states-flag.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 0;
+}
+
+#container, .scene {
+    position: relative;
+    z-index: 1;
+}
+
+/* ------------------------------------
+   CONTENEDOR PRINCIPAL
+------------------------------------- */
+
+#qc, #menu {
+    width: 90%;
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------------------
+   TITULOS
+------------------------------------- */
+
+h1, h2 {
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-weight: 800;
+    color: #0f0f0f;
+}
+
+/* ------------------------------------
+   INPUT
+------------------------------------- */
+
+#caps {
+    width: 90%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #16A34A;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+#caps:focus {
+    border-color: #15803d;
+    box-shadow: 0 0 5px rgba(22, 163, 74, 0.4);
+}
+
+/* ------------------------------------
+   BOTONES
+------------------------------------- */
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #16A34A;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 8px;
+}
+
+button:hover {
+    background: #22c55e;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Botón incorrecto (solo si lo usas) */
+.btn-red {
+    background: #DC2626;
+}
+
+.btn-red:hover {
+    background: #ef4444;
+}
+
+/* ------------------------------------
+   RESULTADO
+------------------------------------- */
+
+#result2 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-height: 40px;
+    text-align: center;
+}
+
+/* ------------------------------------
+   LAYOUT
+------------------------------------- */
+
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

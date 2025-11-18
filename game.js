@@ -1,7 +1,3 @@
-const menu=document.getElementById("menu");
-const game=document.getElementById("qc");
-const caps=document.getElementById("caps");
-const sts=document.getElementById("sts");
 
 //El diccionario ☺
 const  dcc=[
@@ -134,3 +130,97 @@ const  dcc=[
         cap:"zacatecas"
     },
     ]
+
+const menu = document.getElementById("menu");
+const game = document.getElementById("qc");
+const caps = document.getElementById("caps");
+const sts = document.getElementById("sts");
+const result2 = document.getElementById("result2");
+const send = document.getElementById("send");
+
+let current = null;
+let total = 0;
+let aciertos = 0;
+
+function randState() {
+    return dcc[Math.floor(Math.random() * dcc.length)];
+}
+
+function show(id) {
+    document.querySelectorAll(".scene").forEach(sc => sc.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+
+function nuevaPregunta() {
+    if (total >= 10) {
+        terminarJuego();
+        return;
+    }
+
+    current = randState();
+    sts.textContent = "Capital de: " + current.st.toUpperCase();
+    caps.value = "";
+    result2.textContent = "";
+
+    total++;
+}
+
+function verificar() {
+    const user = caps.value.trim().toLowerCase();
+    const correct = current.cap.toLowerCase();
+
+    if (!user) {
+        result2.textContent = "Escribe algo.";
+        result2.style.color = "orange";
+        return;
+    }
+
+    if (user === correct) {
+        result2.textContent = "✔ Correcto";
+        result2.style.color = "green";
+        aciertos++;
+    } else {
+        result2.textContent = "✖ Era: " + current.cap;
+        result2.style.color = "red";
+    }
+
+    setTimeout(nuevaPregunta, 900);
+}
+
+function terminarJuego() {
+    sts.textContent = "Juego terminado";
+    result2.textContent = aciertos + "/10";
+
+    caps.style.display = "none";
+    send.style.display = "none";
+
+    const btn = document.createElement("button");
+    btn.textContent = "Reiniciar";
+    btn.onclick = reiniciar;
+
+    game.appendChild(btn);
+}
+
+function reiniciar() {
+    total = 0;
+    aciertos = 0;
+
+    caps.style.display = "inline-block";
+    send.style.display = "inline-block";
+
+    const extraBtn = document.querySelector("#qc button:not(#send)");
+    if (extraBtn) extraBtn.remove();
+
+    show("menu");
+}
+
+document.getElementById("start2").onclick = () => {
+    show("qc");
+    nuevaPregunta();
+};
+
+send.onclick = verificar;
+
+caps.addEventListener("keypress", e => {
+    if (e.key === "Enter") verificar();
+});

@@ -5,20 +5,22 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="gc">
-        <div id="menu">
-            <h1>Aprende estados y capitales</h1>
-            <p>Selecciona si deseas adivinar estados o capitales</p> <img src="mo.png">
-            <button id="sts">Estados</button>
-            <button id="caps">Capitales</button>
-        </div>
-        <div id="qc">
-            
-            <div id="ac">
-                
-            </div>
-        </div>
-    </div>
+    <div id="menu" class="scene">
+    <center>
+        <h1>Juego de Capitales</h1>
+        <button id="start2">Iniciar</button>
+    </center>
+</div>
+
+<div id="qc" class="scene" style="display:none;">
+    <center>
+        <h2 id="sts"></h2>
+        <input type="text" id="caps" placeholder="Escribe la capital...">
+        <button id="send">Enviar</button>
+        <div id="result2"></div>
+    </center>
+</div>
+
     <script src="game.js"></script>
 </body>
 </html>
